@@ -47,7 +47,7 @@ if sys.version_info < (3, 8, 0):
     exit(1)
 
 try:
-    config_file = dict(dotenv_values("config.env"))
+    config_file = dict(os.environ)
     config_file['load'] = config_file['load'].split()
     config_file['no_load'] = config_file['no_load'].split()
     config_file['sudo_users'] = config_file['sudo_users'].split()
