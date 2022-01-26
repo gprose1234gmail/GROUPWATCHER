@@ -7,7 +7,7 @@ import logging
 
 def start() -> scoped_session:
     try:
-        engine = create_engine(CONFIG.database_url, client_encoding="utf8")
+        engine = create_engine(CONFIG.DATABASE_URL, client_encoding="utf8")
         BASE.metadata.bind = engine
         BASE.metadata.create_all(engine)
         return scoped_session(sessionmaker(bind=engine, autoflush=False))
