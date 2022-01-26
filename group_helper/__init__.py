@@ -17,7 +17,7 @@ class GroupHelperConfig(BaseModel):
     api_id: int
     api_hash: str
     bot_token: str
-    database_url: str
+    DATABASE_URL: str
     load: List[str]
     no_load: List[str]
     del_cmds: Optional[bool] = False
