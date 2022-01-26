@@ -30,9 +30,9 @@ RUN update-ms-fonts && \
 RUN mkdir /data
 
 RUN chmod 777 /data
-RUN git clone https://github.com/thedeveloper12/GroupHelper.git -b main /data/GroupHalper
+RUN git clone https://github.com/thedeveloper12/GroupHelperV2.git -b main /data/GroupHalper
 
-RUN pip install -r /data/GroupHalper/requirements.txt
+RUN pip install -r /data/GroupHelperV2/requirements.txt
 RUN apk del .build-deps
 
 
